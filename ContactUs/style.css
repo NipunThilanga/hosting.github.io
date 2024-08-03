@@ -98,11 +98,44 @@ button:hover:before {
     font-size: 150%;
     padding: 50px 0;
     background: #333;
-    color: white;
+    color: black;
+    background-color: white;
+    background: linear-gradient(to right, rgba(84, 116, 84, 0.5), rgba(116, 85, 116, 0.5));
+    /* color: white;
     background: url('/ContactUs/images/bc.jpg') no-repeat center center fixed;
-    background-size: cover;
+    background-size: cover; */
 }
-
+.header1 h1 {
+    font-size: 78px;
+    position: relative; /* Required for the shine effect */
+    color: #fff; /* Adjust color as needed */
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3), /* Shadow on bottom-right */
+                 -2px -2px 8px rgba(255, 255, 255, 0.7); /* Highlight on top-left */
+    overflow: hidden; /* To contain the shine effect within the text */
+  }
+  
+  /* Shine effect */
+  .header1 h1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 200%;
+    height: 100%;
+    background: linear-gradient(120deg, rgba(255, 255, 255, 0) 30%, rgba(255, 255, 255, 0.6) 50%, rgba(255, 255, 255, 0) 70%);
+    animation: shine 5s infinite;
+  }
+  
+  /* Keyframes for shine effect */
+  @keyframes shine {
+    0% {
+      left: -100%;
+    }
+    100% {
+      left: 100%;
+    }
+  }
+  
 .contact-info {
     display: flex;
     flex-wrap: wrap;
