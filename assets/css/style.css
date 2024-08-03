@@ -1283,7 +1283,8 @@ body.nav-active { overflow: hidden; }
 
 .menu {
   background-color: white;
-  background: url('/assets/images_new/product_bc.jpg');
+  background: linear-gradient(to right, rgba(190, 249, 190, 0.5), rgba(244, 227, 244, 0.5));
+  /* background: url('/assets/images_new/product_bc.jpg'); */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1296,12 +1297,32 @@ body.nav-active { overflow: hidden; }
 .btn-primary1,
 .btn-primary2,
 .btn-primary3 {
-  font-size: 14px;
+  font-size: 12px;
   border-radius: 28px;
   padding: 10px 20px;
   text-align: center;
   display: block;
   margin: 10px auto;
+  background-color: #368155; /* Green color */
+  color: white;
+  border: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-primary0:hover,
+.btn-primary1:hover,
+.btn-primary2:hover,
+.btn-primary3:hover {
+  background-color: #27ae60; /* Darker green color */
+  transform: scale(1.05);
+}
+
+.btn-primary0:focus,
+.btn-primary1:focus,
+.btn-primary2:focus,
+.btn-primary3:focus {
+  outline: none;
+  box-shadow: 0 0 10px rgba(46, 204, 113, 0.5);
 }
 
 /* Other menu styles */
