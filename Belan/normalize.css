@@ -171,8 +171,8 @@ dfn {
  */
 
 mark {
-  background-color: #ff0;
-  color: #000;
+  background-color: rgb(255, 255, 0);
+  color: #060606;
 }
 
 /**
